@@ -16,6 +16,11 @@ public class Main {
         }
        }
 
+       static void deleteStudent(String name) {
+       students.remove(name);
+       System.out.println(name + " removed.");
+}
+
 
 
     
