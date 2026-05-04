@@ -31,6 +31,22 @@ public class Main {
     System.out.println("Total students: " + students.size());
 }
 
+
+static void searchStudent(String name) {
+    boolean found = false;
+    for (String s : students) {
+        if (s.equalsIgnoreCase(name)) {
+            found = true;
+            break;
+        }
+    }
+    if (found) {
+        System.out.println(name + " found.");
+    } else {
+        System.out.println(name + " not found.");
+    }
+}
+
     
 
 
