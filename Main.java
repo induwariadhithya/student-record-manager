@@ -7,6 +7,13 @@ public class Main {
     public static void main(String[] args) {
         students.add("John");
         System.out.println("Student Added");
+        viewStudents();
+        deleteStudent("Alice");
+        countStudents();
+
+
+
+
     }
 
     static void viewStudents() {
@@ -20,6 +27,11 @@ public class Main {
        students.remove(name);
        System.out.println(name + " removed.");
 }
+    static void countStudents() {
+    System.out.println("Total students: " + students.size());
+}
+
+    
 
 
 
